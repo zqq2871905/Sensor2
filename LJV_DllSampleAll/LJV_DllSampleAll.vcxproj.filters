@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\SubDlg">
+      <UniqueIdentifier>{4c40836f-0e2d-4361-bf0d-42ce1d0fe410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SubDlg">
+      <UniqueIdentifier>{13a778e1-2245-4109-a460-ab729bb33bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{04a72e63-8955-4fa9-9ec2-82c18e61ce8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CombinationFuncDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DataExport.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LJV_DllSampleAll.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LJV_DllSampleAllDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleFuncDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadSafeBuffer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearErrorDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthProgramSelectDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetBatchProfileAdvanceDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetBatchProfileDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetErrorDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetProfileDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetStorageBatchProfileDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetStorageDataDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GetStorageStatusDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HighSpeedEthernetInitializeDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HighSpeedUsbInitializeDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenEthernetDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="OutSelectDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="PreStartHighSpeedDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeDlg.cpp">
+      <Filter>ソース ファイル\SubDlg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CombinationFuncDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExport.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LJV_DllSampleAll.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LJV_DllSampleAllDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleFuncDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSafeBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearErrorDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthProgramSelectDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetBatchProfileAdvanceDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetBatchProfileDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetErrorDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetProfileDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetStorageBatchProfileDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetStorageDataDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GetStorageStatusDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HighSpeedEthernetInitializeDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HighSpeedUsbInitializeDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenEthernetDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="OutSelectDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="PreStartHighSpeedDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeDlg.h">
+      <Filter>ヘッダー ファイル\SubDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\LJV7_ErrorCode.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\LJV7_IF.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LJV_DllSampleAll.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LJV_DllSampleAll.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LJV_DllSampleAll.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Lib\LJV7_IF.dll">
+      <Filter>Lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Lib\LJV7_IF.lib">
+      <Filter>Lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
