@@ -1,5 +1,7 @@
 //Copyright(c) 2013, KEYENCE Corporation. All rights reserved.
 #pragma once
+
+#include <Windows.h>
 #include "LJV7_IF.h"
 #include <vector>
 #include <QString>

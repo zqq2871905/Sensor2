@@ -62,6 +62,12 @@
     <ClCompile Include="DeviceData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ThreadSafeBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="sensor.ui">
@@ -92,6 +98,12 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_ConnectDevice.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSafeBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExport.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

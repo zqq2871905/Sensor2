@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>481</width>
-    <height>339</height>
+    <width>480</width>
+    <height>430</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>70</y>
+     <x>20</x>
+     <y>30</y>
      <width>111</width>
      <height>28</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="pushButton_16">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>70</y>
+     <x>170</x>
+     <y>30</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -39,17 +39,131 @@
     <string>关闭设备</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_17">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>70</y>
-     <width>93</width>
+     <x>22</x>
+     <y>90</y>
+     <width>111</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>高速轮廓值</string>
+    <string>获取当前值</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>104</width>
+     <height>87</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>120</y>
+     <width>104</width>
+     <height>87</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>100</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>控制器A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>控制器B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存路径：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>280</y>
+     <width>171</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>280</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>161</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>获取高速模式轮廓</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>230</y>
+     <width>161</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>获取高功能模式轮廓</string>
    </property>
   </widget>
  </widget>
@@ -65,8 +179,8 @@
    <slot>OnOpen()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>109</x>
-     <y>81</y>
+     <x>79</x>
+     <y>41</y>
     </hint>
     <hint type="destinationlabel">
      <x>34</x>
@@ -81,12 +195,44 @@
    <slot>OnClose()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>227</x>
-     <y>78</y>
+     <x>177</x>
+     <y>38</y>
     </hint>
     <hint type="destinationlabel">
      <x>254</x>
      <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SensorClass</receiver>
+   <slot>OnGetcurrentvalue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>27</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>SensorClass</receiver>
+   <slot>OnGetprofiledata()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>270</y>
     </hint>
    </hints>
   </connection>
@@ -96,5 +242,8 @@
   <slot>OnFinal()</slot>
   <slot>OnOpen()</slot>
   <slot>OnClose()</slot>
+  <slot>OnGetcurrentvalue()</slot>
+  <slot>OnTextChanged()</slot>
+  <slot>OnGetprofiledata()</slot>
  </slots>
 </ui>

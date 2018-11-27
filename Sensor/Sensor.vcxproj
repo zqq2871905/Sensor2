@@ -104,9 +104,9 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>D:\VS2015projects\Sensor\LJV_DllSampleAll\Lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\VS2015projects\Sensor\LJV_DllSampleAll\Lib;D:\VS2015projects\Sensor2\Sensor;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;LJV7_IF.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;LJV7_IF.lib;IPHLPAPI.LIB;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConnectDevice.cpp" />
+    <ClCompile Include="DataExport.cpp" />
     <ClCompile Include="DeviceData.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_ConnectDevice.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -172,6 +173,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sensor.cpp" />
+    <ClCompile Include="ThreadSafeBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="sensor.h">
@@ -214,7 +216,9 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataExport.h" />
     <ClInclude Include="GeneratedFiles\ui_ConnectDevice.h" />
+    <ClInclude Include="ThreadSafeBuffer.h" />
     <CustomBuild Include="ConnectDevice.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ConnectDevice.h...</Message>

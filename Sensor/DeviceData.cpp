@@ -1,5 +1,5 @@
 //Copyright(c) 2013, KEYENCE Corporation. All rights reserved.
-#include "qt_windows.h"
+//#include "qt_windows.h"
 #include "DeviceData.h"
 
 DeviceData::DeviceData(void)

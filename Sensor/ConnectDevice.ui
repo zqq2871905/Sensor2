@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>ConnectDevice</class>
  <widget class="QWidget" name="ConnectDevice">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,6 +17,9 @@
    <string>Form</string>
   </property>
   <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -451,6 +457,9 @@
      </property>
     </widget>
     <widget class="QCheckBox" name="checkBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>320</x>
@@ -460,7 +469,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>仅获取轮廓</string>
+      <string>高速数据通信</string>
      </property>
      <property name="checked">
       <bool>true</bool>
@@ -513,6 +522,38 @@
     <hint type="destinationlabel">
      <x>239</x>
      <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ConnectDevice</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>ConnectDevice</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>261</y>
     </hint>
    </hints>
   </connection>
